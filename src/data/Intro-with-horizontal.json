@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": { "first": "Custom Woodworking", "second": "Carpentry, cabinetry, furniture and millwork" },
+        "content": {
+            "first": "A range of carpentry, cabinetry, furniture and millwork at your disposal.",
+            "second": "business. a style that makes a statement."
+        },
+        "image": "/img/ls/ls-1.jpg"
+    },
+    {
+        "id": 2,
+        "title": { "first": "Maintenance Services", "second": "Classic and Modern" },
+        "content": {
+            "first": "Regular upkeep and repairs for both residential and commercial properties",
+            "second": "business. a style that makes a statement."
+        },
+        "image": "/img/ls/ls-2.jpg"
+    },
+    {
+        "id": 3,
+        "title": { "first": "Renovations", "second": "Elegant & Unique Design" },
+        "content": {
+            "first": "Space planning, color consultation, and selection of finishes and fixtures, as well as design and drafting for new construction and renovations",
+            "second": "business. a style that makes a statement."
+        },
+        "image": "/img/ls/ls-3.jpg"
+    }
+]

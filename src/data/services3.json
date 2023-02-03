@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "image": "/img/srv/remodel.jpg",
+        "icon": "icon flaticon-home-1",
+        "title": "Remodels",
+        "content": "Kitchen and bathroom cabinetry, countertops, and tilework"
+    },
+    {
+        "id": 2,
+        "image": "/img/srv/renovation.jpg",
+        "icon": "icon flaticon-living-room",
+        "title": "Renovations",
+        "content": "Designing and building new rooms, as well as expanding or reconfiguring existing spaces"
+    },
+    {
+        "id": 3,
+        "image": "/img/srv/flooring.jpg",
+        "icon": "icon flaticon-interior-design",
+        "title": "Flooring",
+        "content": "Installation and repair of hardwood, laminate, carpeted and tiled floors"
+    },
+    {
+        "id": 4,
+        "image": "/img/srv/painting.jpg",
+        "icon": "icon flaticon-home-1",
+        "title": "Painting",
+        "content": "Color consultation, painting, staining and other finishing work for interiors, exteriors, furniture and wallpaper"
+    },
+    {
+        "id": 5,
+        "image": "/img/srv/upgrade.jpg",
+        "icon": "icon flaticon-living-room",
+        "title": "Upgrades",
+        "content": "Includes window and door replacement, insulation, and handicap accessibility"
+    },
+    {
+        "id": 6,
+        "image": "/img/srv/consultation.jpg",
+        "icon": "icon flaticon-interior-design",
+        "title": "Consultations",
+        "content": "Advisory services helping clients make informed decisions on construction and renovation projects, including layout services and furniture placement"
+    },
+    {
+        "id": 7,
+        "image": "/img/srv/shelving.jpg",
+        "icon": "icon flaticon-home-1",
+        "title": "Shelving",
+        "content": "Bookshelves, entertainment centers, and storage solutions"
+    },
+    {
+        "id": 8,
+        "image": "/img/srv/millwork.jpg",
+        "icon": "icon flaticon-living-room",
+        "title": "Millwork",
+        "content": "Crown molding, wainscoting, and other decorative elements"
+    },
+    {
+        "id": 9,
+        "image": "/img/srv/cabinetry.jpg",
+        "icon": "icon flaticon-interior-design",
+        "title": "Cabinetry",
+        "content": "Includes (but not limited to) closets, laundry rooms, bathroom cabinets and other functional spaces"
+    },
+    {
+        "id": 10,
+        "image": "/img/srv/exterior.jpg",
+        "icon": "icon flaticon-home-1",
+        "title": "Exterior Carpentry",
+        "content": "Includes (but not limited to) decks, porches, pergolas, and other outdoor living spaces such as fences, gates, and trellises"
+    },
+    {
+        "id": 11,
+        "image": "/img/srv/furniture.jpg",
+        "icon": "icon flaticon-living-room",
+        "title": "Furniture",
+        "content": "Design and fabrication, such as tables, chairs, and bed frames"
+    },
+    {
+        "id": 12,
+        "image": "/img/srv/window.jpg",
+        "icon": "icon flaticon-interior-design",
+        "title": "Window Treatment",
+        "content": "Includes design and installation, blinds, shades, and curtains"
+    }
+]

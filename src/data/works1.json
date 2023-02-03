@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image": "/img/ls/ls-1.jpg",
+        "title": "art & illustration",
+        "secTex": "Innovation and Crafts."
+    },
+    {
+        "id": 2,
+        "image": "/img/ls/ls-2.jpg",
+        "title": "art & illustration",
+        "secTex": "Innovation and Crafts."
+    },
+    {
+        "id": 3,
+        "image": "/img/ls/ls-3.jpg",
+        "title": "art & illustration",
+        "secTex": "Innovation and Crafts."
+    },
+    {
+        "id": 4,
+        "image": "/img/ls/ls-1.jpg",
+        "title": "art & illustration",
+        "secTex": "Innovation and Crafts."
+    },
+    {
+        "id": 5,
+        "image": "/img/ls/ls-2.jpg",
+        "title": "art & illustration",
+        "secTex": "Innovation and Crafts."
+    }
+]
