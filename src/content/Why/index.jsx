@@ -47,7 +47,7 @@ const Services6 = () => {
                                 direction="row-reverse"
                             >
                                 {whyData.map((item) => (
-                                    <Grid item xs={12} sm={6} md={6}>
+                                    <Grid key={item.title} item xs={12} sm={6} md={6}>
                                         <Paper
                                             elevation={5}
                                             sx={{

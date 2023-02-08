@@ -8,7 +8,7 @@ const Contact = () => {
         <section id="contact" className="contact">
             <Banner
                 title="Contact"
-                subtitle="We provide our services all throughout London and surrounding areas. Please enquire about individual services <a href='#services'>here</a>, and for anything else, please use the contact form below."
+                subtitle="We provide our services all throughout London and surrounding areas.<br/>Please enquire about individual services <a href='#services' style='color:#ccc;'>here</a>, and for anything else, please use the contact form below."
             />
             <div className="container section-padding">
                 <ContactInfo />

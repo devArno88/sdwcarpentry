@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactInfo = () => {
     return (
-        <div className="info pt-80 pb-80">
+        <div className="info pt-0 pb-80">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4">
