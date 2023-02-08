@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 // import getSiblings from "../../common/getSiblings";
 import ConstructionTwoToneIcon from "@mui/icons-material/ConstructionTwoTone";
+import { Box } from "@mui/material";
 const Navbar = ({ navbarRef, logoRef, logoClass }) => {
     // const handleDropdown = (e) => {
     //     getSiblings(e.target.parentElement)
@@ -29,9 +30,11 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
         <>
             <nav className="navbar change navbar-expand-lg" ref={navbarRef}>
                 <div className="container">
-                    <Link href="/">
-                        <ConstructionTwoToneIcon fontSize="large" sx={{ fill: "#E2D2BF", cursor: "pointer" }} />
-                    </Link>
+                    <Box sx={{ display: { xs: "none", sm: "block" } }}>
+                        <Link href="/">
+                            <ConstructionTwoToneIcon fontSize="large" sx={{ fill: "#E2D2BF", cursor: "pointer" }} />
+                        </Link>
+                    </Box>
 
                     <button
                         className="navbar-toggler"

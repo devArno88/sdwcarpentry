@@ -1,56 +1,103 @@
 /* eslint-disable @next/next/no-img-element */
-import { Typography } from "@mui/material";
+import { Grid, Paper, Stack, Typography } from "@mui/material";
 import React from "react";
 import whyData from "../../data/why";
 const Services6 = () => {
     return (
         <section className="services-feat section-padding pt-0" id="why">
             <div className="container">
+                <Typography
+                    variant="h4"
+                    sx={{
+                        color: "#E2D2BF",
+                        textAlign: "center",
+                        mt: { xs: 2, sm: 8, md: 12 },
+                        mb: { xs: 2, sm: 4, md: 6 },
+                    }}
+                >
+                    What We Can Offer
+                </Typography>
                 <div className="row">
-                    <div className="col-lg-6">
-                        <img
-                            src="/img/pt/pt-1.jpg"
-                            alt="Why"
-                            style={{
-                                width: "80%",
-                                marginLeft: 80,
-                                borderRadius: "1rem",
-                                boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
-                            }}
-                        />
-                    </div>
-                    <div className="col-lg-6 valign">
-                        <div className="cont">
-                            <Typography
-                                variant="h4"
-                                sx={{
-                                    color: "#E2D2BF",
-                                    ml: { sm: 4, md: 11 },
-                                    mb: 4,
-                                    textAlign: { sm: "center", md: "start" },
+                    <Grid
+                        container
+                        spacing={6}
+                        display="flex"
+                        alignItems="flex-start"
+                        justifyContent="center"
+                        direction="row"
+                    >
+                        <Grid item xs={9} sm={8} md={4}>
+                            <img
+                                src="/img/pt/pt-1.jpg"
+                                alt="Why"
+                                style={{
+                                    borderRadius: "1rem",
+                                    boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
                                 }}
+                            />{" "}
+                        </Grid>
+
+                        <Grid item xs={10} sm={12} md={8}>
+                            <Grid
+                                container
+                                spacing={4}
+                                display="flex"
+                                alignItems="flex-start"
+                                justifyContent="center"
+                                direction="row-reverse"
                             >
-                                What We Can Offer
-                            </Typography>
-                            {whyData.map((item) => (
-                                <div className="item" key={item.id}>
-                                    <item.icon
-                                        style={{
-                                            height: 32,
-                                            width: 32,
-                                            marginTop: 3,
-                                            marginRight: 12,
-                                            fill: "#c5a47e",
-                                        }}
-                                    />
-                                    <div>
-                                        <Typography variant="h5">{item.title}</Typography>
-                                        <p>{item.subtitle}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                                {whyData.map((item) => (
+                                    <Grid item xs={12} sm={6} md={6}>
+                                        <Paper
+                                            elevation={5}
+                                            sx={{
+                                                bgcolor: "#212121",
+                                                p: { xs: 3, sm: 2, md: 4 },
+                                                borderRadius: "1rem",
+                                            }}
+                                        >
+                                            <Stack key={item.id} mb={3}>
+                                                <Stack
+                                                    // direction={{
+                                                    //     xs: "column-reverse",
+                                                    //     sm: "row",
+                                                    // }}
+                                                    direction={"row"}
+                                                    justifyContent={{ xs: "center", sm: "center", md: "flex-start" }}
+                                                    alignItems="center"
+                                                    mb={{ xs: 1, sm: 1, md: 2 }}
+                                                    spacing={2}
+                                                >
+                                                    <item.icon
+                                                        sx={{
+                                                            height: { xs: 32, sm: 28, md: 36 },
+                                                            width: { xs: 36, sm: 28, md: 36 },
+                                                            opacity: 0.6,
+                                                            fill: "#c5a47e",
+                                                        }}
+                                                    />
+                                                    <Typography
+                                                        fontSize={{ xs: 24, sm: 22, md: 26 }}
+                                                        sx={{ color: "#E2D2BF" }}
+                                                    >
+                                                        {item.title}
+                                                    </Typography>
+                                                </Stack>
+                                                <Typography
+                                                    textAlign={{ xs: "center", sm: "center", md: "start" }}
+                                                    fontSize={{ xs: 18, sm: 17, md: 20 }}
+                                                    pl={{ xs: 1, sm: 2, md: 1 }}
+                                                    pr={{ xs: 1, sm: 2, md: 1 }}
+                                                >
+                                                    {item.subtitle}
+                                                </Typography>
+                                            </Stack>
+                                        </Paper>
+                                    </Grid>
+                                ))}
+                            </Grid>
+                        </Grid>
+                    </Grid>
                 </div>
             </div>
         </section>

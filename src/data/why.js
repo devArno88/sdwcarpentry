@@ -38,20 +38,19 @@ module.exports = [
     {
         id: "priority",
         title: "Priority",
-        subtitle: "A personalized customer service approach to understand client needs and preferences",
+        subtitle: "A personalized customer service approach to understand preferences and deliver client expectations",
         icon: LibraryAddCheckTwoToneIcon,
     },
     {
         id: "transparency",
         title: "Transparency",
-        subtitle: "A transparent and honest pricing structure, with no hidden fees or surprises",
+        subtitle: "A simple and honest pricing structure, with no hidden fees or surprises throughout progression",
         icon: TroubleshootTwoToneIcon,
     },
     {
         id: "consistency",
         title: "Consistency",
-        subtitle:
-            "A comprehensive warranty on all services and products, with regular check-ins to ensure complete satisfaction with the completed work",
+        subtitle: "A comprehensive warranty on all services to ensure complete satisfaction with ongoing projects",
         icon: ForumTwoToneIcon,
     },
 ];
