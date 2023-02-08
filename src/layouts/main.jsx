@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-css-tags */
 import Head from "next/head";
 import React from "react";
-import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const MainLayout = ({ children, logoClassText }) => {
@@ -33,7 +32,7 @@ const MainLayout = ({ children, logoClassText }) => {
             </Head>
             <Navbar navbarRef={navbarRef} logoRef={logoRef} logoClass={logoClassText} />
             {children}
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };

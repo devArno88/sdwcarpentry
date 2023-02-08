@@ -47,7 +47,7 @@ class Testimonials1 extends React.Component {
                 >
                     <Banner
                         title="Testimonials"
-                        subtitle="We've been working with home owners and businesses since 2014.<br/>See what our customers have to say."
+                        subtitle="We've been working with home owners and businesses since 2014. See what our customers have to say."
                     />
                     <div className="container">
                         {/* <div className="main-header text-center">

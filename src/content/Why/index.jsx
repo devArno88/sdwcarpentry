@@ -2,6 +2,18 @@
 import { Grid, Paper, Stack, Typography } from "@mui/material";
 import React from "react";
 import whyData from "../../data/why";
+
+const EmailBlock = ({ children }) => (
+    <a
+        target="_blank"
+        rel="noreferrer"
+        href={`mailto:contact@sdwcarpentry.com?subject=Enquiry: ${title}&body=${body}`}
+        style={{ width: "100%", height: "100%" }}
+    >
+        {children}
+    </a>
+);
+
 const Services6 = () => {
     return (
         <section className="services-feat section-padding pt-0" id="why">
@@ -52,46 +64,45 @@ const Services6 = () => {
                                             elevation={5}
                                             sx={{
                                                 bgcolor: "#212121",
-                                                p: { xs: 3, sm: 2, md: 4 },
+                                                p: { xs: 3, sm: 3, md: 4 },
+
                                                 borderRadius: "1rem",
                                             }}
                                         >
-                                            <Stack key={item.id} mb={3}>
-                                                <Stack
-                                                    // direction={{
-                                                    //     xs: "column-reverse",
-                                                    //     sm: "row",
-                                                    // }}
-                                                    direction={"row"}
-                                                    justifyContent={{ xs: "center", sm: "center", md: "flex-start" }}
-                                                    alignItems="center"
-                                                    mb={{ xs: 1, sm: 1, md: 2 }}
-                                                    spacing={2}
-                                                >
-                                                    <item.icon
-                                                        sx={{
-                                                            height: { xs: 32, sm: 28, md: 36 },
-                                                            width: { xs: 36, sm: 28, md: 36 },
-                                                            opacity: 0.6,
-                                                            fill: "#c5a47e",
-                                                        }}
-                                                    />
-                                                    <Typography
-                                                        fontSize={{ xs: 24, sm: 22, md: 26 }}
-                                                        sx={{ color: "#E2D2BF" }}
-                                                    >
-                                                        {item.title}
-                                                    </Typography>
-                                                </Stack>
+                                            <Stack
+                                                // direction={{
+                                                //     xs: "column-reverse",
+                                                //     sm: "row",
+                                                // }}
+                                                direction={"row"}
+                                                justifyContent={{ xs: "center", sm: "center", md: "flex-start" }}
+                                                alignItems="center"
+                                                mb={{ xs: 1, sm: 1, md: 2 }}
+                                                spacing={1}
+                                            >
+                                                <item.icon
+                                                    sx={{
+                                                        height: { xs: 32, sm: 28, md: 36 },
+                                                        width: { xs: 36, sm: 28, md: 36 },
+                                                        opacity: 0.6,
+                                                        fill: "#c5a47e",
+                                                    }}
+                                                />
                                                 <Typography
-                                                    textAlign={{ xs: "center", sm: "center", md: "start" }}
-                                                    fontSize={{ xs: 18, sm: 17, md: 20 }}
-                                                    pl={{ xs: 1, sm: 2, md: 1 }}
-                                                    pr={{ xs: 1, sm: 2, md: 1 }}
+                                                    fontSize={{ xs: 24, sm: 22, md: 26 }}
+                                                    sx={{ color: "#E2D2BF" }}
                                                 >
-                                                    {item.subtitle}
+                                                    {item.title}
                                                 </Typography>
                                             </Stack>
+                                            <Typography
+                                                textAlign={{ xs: "center", sm: "center", md: "start" }}
+                                                fontSize={{ xs: 18, sm: 19, md: 20 }}
+                                                pl={{ xs: 1, sm: 2, md: 1 }}
+                                                pr={{ xs: 1, sm: 2, md: 1 }}
+                                            >
+                                                {item.subtitle}
+                                            </Typography>
                                         </Paper>
                                     </Grid>
                                 ))}

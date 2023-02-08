@@ -1,18 +1,17 @@
 import React from "react";
 import Banner from "../../components/Banner";
 import ContactInfo from "../../components/Contact-info";
-import ContactWithMap from "../../components/Contact-with-map";
 
 const Contact = () => {
     return (
         <section id="contact" className="contact">
             <Banner
                 title="Contact"
-                subtitle="We provide our services all throughout London and surrounding areas.<br/>Please enquire about individual services <a href='#services' style='color:#ccc;'>here</a>, and for anything else, please use the contact form below."
+                subtitle="We provide our services all throughout London and surrounding areas. Please enquire about individual services <a href='#services' style='color:#ccc;'>here</a>, or get in touch with the information below."
             />
-            <div className="container section-padding">
+            <div className="container">
                 <ContactInfo />
-                <ContactWithMap />
+                {/* <ContactWithMap /> */}
             </div>
         </section>
     );

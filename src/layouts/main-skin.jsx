@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-css-tags */
 import Head from "next/head";
 import React from "react";
-import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const MainSkin = ({ children }) => {
@@ -34,7 +33,7 @@ const MainSkin = ({ children }) => {
             </Head>
             <Navbar navbarRef={navbarRef} logoRef={logoRef} />
             {children}
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };
