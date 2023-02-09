@@ -6,8 +6,10 @@ const Contact = () => {
     return (
         <section id="contact" className="contact">
             <Banner
+                prevLink="testimonials"
+                banner={3}
                 title="Contact"
-                subtitle="We provide our services all throughout London and surrounding areas. Please enquire about individual services <a href='#services' style='color:#ccc;'>here</a>, or get in touch with the information below."
+                subtitle="We provide our services all throughout London and surrounding areas. Please enquire about individual services <a href='#services' style='color:#E1C16E;'>here</a>, or get in touch with the information below."
             />
             <div className="container">
                 <ContactInfo />

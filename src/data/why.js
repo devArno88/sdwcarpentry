@@ -38,7 +38,7 @@ module.exports = [
     {
         id: "priority",
         title: "Priority",
-        subtitle: "A personalized customer service approach to understand preferences and deliver client expectations",
+        subtitle: "A personalised customer service approach to prioritise needs and deliver client expectations",
         icon: LibraryAddCheckTwoToneIcon,
     },
     {

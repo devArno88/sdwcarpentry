@@ -31,7 +31,7 @@ const ContactInfo = () => {
         <a
             target="_blank"
             rel="noreferrer"
-            href={`mailto:contact@sdwcarpentry.com?subject=Enquiry&body=${body}`}
+            href={`mailto:contact@sdwcarpentry.com?subject=General Enquiry&body=${body}`}
             style={{ width: "100%", height: "100%" }}
         >
             {children}
@@ -44,13 +44,13 @@ const ContactInfo = () => {
                     <Grid container spacing={6} display="flex" alignItems="center" justifyContent="center">
                         <Grid item xs={10} sm={10} md={6}>
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d79471.85316571798!2d-0.12064060663753927!3d51.50412651883481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1675888389358!5m2!1sen!2suk"
                                 width="100%"
                                 height="450"
-                                style={{ border: 0 }}
-                                allowFullScreen=""
                                 loading="lazy"
+                                allowFullScreen=""
+                                style={{ border: 0 }}
                                 referrerPolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d79471.85316571798!2d-0.12064060663753927!3d51.50412651883481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1675888389358!5m2!1sen!2suk"
                             />
                         </Grid>
                         <Grid item xs={10} sm={10} md={4}>
@@ -63,7 +63,6 @@ const ContactInfo = () => {
                                                 bgcolor: "#212121",
                                                 borderRadius: "1rem",
                                                 p: { xs: 3, sm: 3, md: 2 },
-                                                // alignItems: "center",
                                                 justifyContent: "center",
                                                 cursor: item.title === "Email" ? "pointer" : undefined,
                                             }}
@@ -92,12 +91,7 @@ const ContactInfo = () => {
                                                     {item.title}
                                                 </Typography>
                                             </Stack>
-                                            <Typography
-                                                textAlign="center"
-                                                fontSize={{ xs: 22, sm: 22, md: 22 }}
-                                                // pl={{ xs: 1, sm: 2, md: 1 }}
-                                                // pr={{ xs: 1, sm: 2, md: 1 }}
-                                            >
+                                            <Typography textAlign="center" fontSize={{ xs: 22, sm: 22, md: 22 }}>
                                                 {item.subtitle}
                                             </Typography>
                                         </Paper>
@@ -111,33 +105,6 @@ const ContactInfo = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-                    {/* <div className="col-lg-4">
-                        <div className="item">
-                            <span className="icon pe-7s-phone"></span>
-                            <div className="cont">
-                                <h6 className="custom-font">Phone</h6>
-                                <p>+44 7938 897282</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="item">
-                            <span className="icon pe-7s-mail-open"></span>
-                            <div className="cont">
-                                <h6 className="custom-font">Email</h6>
-                                <p>contact@sdwcarpentry.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="item">
-                            <span className="icon pe-7s-map"></span>
-                            <div className="cont">
-                                <h6 className="custom-font">Address</h6>
-                                <p>Check if Stuart wants this</p>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </div>

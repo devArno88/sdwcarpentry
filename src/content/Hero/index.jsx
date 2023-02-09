@@ -30,7 +30,7 @@ const IntroWithHorizontal2 = () => {
 
     return (
         <header className="slider slider-slide">
-            <div className="swiper-container parallax-slider">
+            <div className="swiper-container parallax-slider" id="home">
                 {!load ? (
                     <Swiper
                         speed={1000}
@@ -134,26 +134,18 @@ const IntroWithHorizontal2 = () => {
                     </div> */}
                     {/* <div className="swiper-pagination" ref={paginationRef}></div> */}
                     <div className="social">
-                        <Link href="#">
-                            <a>
-                                <i className="fab fa-facebook-f"></i>
-                            </a>
-                        </Link>
-                        <Link href="#">
-                            <a>
-                                <i className="fab fa-twitter"></i>
-                            </a>
-                        </Link>
-                        <Link href="#">
-                            <a>
-                                <i className="fab fa-instagram"></i>
-                            </a>
-                        </Link>
-                        <Link href="#">
-                            <a>
-                                <i className="fab fa-youtube"></i>
-                            </a>
-                        </Link>
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com">
+                            <i className="fab fa-facebook-f"></i>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com">
+                            <i className="fab fa-twitter"></i>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com">
+                            <i className="fab fa-instagram"></i>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://youtube.com">
+                            <i className="fab fa-youtube"></i>
+                        </a>
                     </div>
                 </div>
             </div>

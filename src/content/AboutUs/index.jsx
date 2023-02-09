@@ -7,6 +7,9 @@ const AboutUs6 = () => {
     return (
         <section className="about-us" id="about">
             <Banner
+                prevLink="services"
+                banner={1}
+                nextLink="testimonials"
                 title="The SDW Story"
                 subtitle="Through a combination of high-quality work, excellent customer service, and a commitment to transparency, our only desire is to achieve 100% customer satisfation (and nothing less)"
             />
