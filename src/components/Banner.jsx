@@ -32,23 +32,31 @@ const Banner = ({ title, subtitle, prevLink, nextLink, banner }) => {
         >
             <Typography
                 textAlign="center"
-                letterSpacing={4}
-                sx={{ color: "#E1C16E", mb: 1, fontSize: { xs: 36, sm: 40, md: 50 }, fontWeight: 200 }}
+                letterSpacing={3}
+                sx={{
+                    color: "#E1C16E",
+                    mb: 1,
+                    fontSize: { xs: 36, sm: 40, md: 50 },
+                    fontWeight: 200,
+                    fontFamily: "monospace",
+                }}
             >
                 {title}
             </Typography>
             <Box style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <Typography
                     textAlign="center"
-                    fontFamily="monospace"
+                    fontWeight={200}
                     sx={{
                         width: { xs: "90%", sm: "80%" },
                         color: "#333",
                         color: "#EADDCA",
                         fontSize: { xs: 18, sm: 20, md: 22 },
+                        letterSpacing: 2,
                     }}
                 >
-                    {htmlSubtitle || subtitle}
+                    {/* {htmlSubtitle || subtitle} */}
+                    {subtitle}
                 </Typography>
             </Box>
             {prevLink || nextLink ? (

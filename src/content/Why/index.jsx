@@ -12,8 +12,8 @@ const Services6 = () => {
                     sx={{
                         color: "#E2D2BF",
                         textAlign: "center",
-                        mt: { xs: 2, sm: 8, md: 12 },
                         mb: { xs: 2, sm: 4, md: 6 },
+                        mt: { xs: 2, sm: 8, md: 12 },
                     }}
                 >
                     What We Can Offer
@@ -37,7 +37,6 @@ const Services6 = () => {
                                 }}
                             />{" "}
                         </Grid>
-
                         <Grid item xs={10} sm={12} md={8}>
                             <Grid
                                 container
@@ -53,9 +52,8 @@ const Services6 = () => {
                                             elevation={5}
                                             sx={{
                                                 bgcolor: "#212121",
-                                                p: { xs: 3, sm: 3, md: 4 },
-
                                                 borderRadius: "1rem",
+                                                p: { xs: 3, sm: 3, md: 4 },
                                             }}
                                         >
                                             <Stack
