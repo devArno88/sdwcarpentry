@@ -34,7 +34,7 @@ const Services = () => {
                 prevLink="home"
                 nextLink="about"
                 title="Services"
-                subtitle="From designing and building new spaces to maintaining and improving existing ones, we provide a wide range of services catering to both residential and commercial clients. Learn more about our services or make an enquiry below."
+                subtitle="From designing and building new spaces to maintaining and improving existing ones, we provide a wide range of services catering to both residential and commercial clients.<br/><br/>Discover more or make an enquiry below."
             />
             <div className="container">
                 <div className="row">

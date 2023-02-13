@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { Stack } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 import thumparallaxUp from "../../common/thumparallaxUp";
@@ -17,25 +18,52 @@ const PostDetails = () => {
                         <div className="col-lg-11">
                             <div className="post">
                                 <div className="title-head">
-                                    <h2>Build a Beautiful Blog With Ease</h2>
+                                    <h2>A Sustainable Practice</h2>
                                     <div className="info">
                                         <p>
                                             <Link href="#">Stuart, Founder & CEO</Link>/
                                             <Link href="#">January 29th, 2022</Link>/<Link href="#">Web Design</Link>
                                         </p>
-                                        <span
-                                            style={{
-                                                border: "1px solid red",
-                                                padding: "6px 12px",
-                                                borderRadius: "1.5rem",
-                                            }}
-                                        >
-                                            # sustainability
-                                        </span>
+                                        <Stack direction="row" gap={2} justifyContent="center" mt={2}>
+                                            <span
+                                                style={{
+                                                    border: "1px solid #c5a47e",
+                                                    color: "#c5a47e",
+                                                    padding: "6px 12px",
+                                                    borderRadius: "1.5rem",
+                                                }}
+                                            >
+                                                # sustainability
+                                            </span>
+                                            <span
+                                                style={{
+                                                    border: "1px solid #c5a47e",
+                                                    color: "#c5a47e",
+                                                    padding: "6px 12px",
+                                                    borderRadius: "1.5rem",
+                                                }}
+                                            >
+                                                # carpentry
+                                            </span>
+                                            <span
+                                                style={{
+                                                    border: "1px solid #c5a47e",
+                                                    color: "#c5a47e",
+                                                    padding: "6px 12px",
+                                                    borderRadius: "1.5rem",
+                                                }}
+                                            >
+                                                # eco-friendly
+                                            </span>
+                                        </Stack>
                                     </div>
                                 </div>
                                 <div className="img main-img">
-                                    <img src="/assets/img/blog/single.jpg" alt="" className="thumparallax" />
+                                    <img
+                                        src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2213&q=80"
+                                        alt=""
+                                        className="thumparallax"
+                                    />
                                 </div>
                                 <div className="content pt-20">
                                     <div className="row justify-content-center">
@@ -130,12 +158,18 @@ const PostDetails = () => {
                                                 <div className="row">
                                                     <div className="col-md-6">
                                                         <div className="mb-10">
-                                                            <img src="/assets/img/blog/single.jpg" alt="" />
+                                                            <img
+                                                                src="https://images.unsplash.com/photo-1503408429278-71c29911c837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                                                alt=""
+                                                            />
                                                         </div>
                                                     </div>
                                                     <div className="col-md-6">
                                                         <div className="mb-10">
-                                                            <img src="/assets/img/blog/single.jpg" alt="" />
+                                                            <img
+                                                                src="https://images.unsplash.com/photo-1536000800373-5b5e6020910a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80"
+                                                                alt=""
+                                                            />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -177,12 +211,11 @@ const PostDetails = () => {
                                                 </div>
                                                 <div className="info">
                                                     <h6>
-                                                        <span>author :</span> Jorden Griffin
+                                                        <span>author :</span> Phoebe Buffay
                                                     </h6>
                                                     <p>
-                                                        the main component of a healthy environment for self esteem is
-                                                        that it needs be nurturing. The main compont of a healthy
-                                                        environment.
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                     </p>
                                                     <div className="social">
                                                         <a href="#">
@@ -201,42 +234,27 @@ const PostDetails = () => {
                                     </div>
                                 </div>
 
-                                <div className="pagination">
-                                    <span>
-                                        <Link href="#">Prev Post</Link>
-                                    </span>
-                                    <span className="icon">
-                                        <Link href="#">
-                                            <a>
-                                                <i className="fas fa-th-large"></i>
-                                            </a>
-                                        </Link>
-                                    </span>
-                                    <span className="text-right">
-                                        <Link href="#">Next Post</Link>
-                                    </span>
-                                </div>
-
                                 <div className="comments-area">
-                                    <h5>Comments :</h5>
+                                    <h5>Comments</h5>
                                     <div className="item">
                                         <div className="comment-img">
                                             <img src="/assets/img/blog/01.jpg" alt="" />
                                         </div>
                                         <div className="info">
                                             <h6>
-                                                Jorden Griffin<span> 6 Aug 2022</span>
+                                                Joey Tribbiani<span> 6 Dec 2022</span>
                                             </h6>
                                             <span className="replay">
                                                 <Link href="#">
                                                     <a>
-                                                        Replay <i className="fas fa-reply"></i>
+                                                        Reply <i className="fas fa-reply"></i>
                                                     </a>
                                                 </Link>
                                             </span>
                                             <p>
-                                                the main component of a healthy environment for self esteem is that it
-                                                needs be nurturing. The main compont of a healthy environment.
+                                                The main component of a healthy environment for self esteem is not that
+                                                it needs be nurturing. The main compont of a healthy environment is the
+                                                willingness to forgive ourselves for our past mistakes. #namaste
                                             </p>
                                         </div>
                                     </div>
@@ -246,18 +264,19 @@ const PostDetails = () => {
                                         </div>
                                         <div className="info">
                                             <h6>
-                                                Jorden Griffin<span> 6 Aug 2022</span>
+                                                Ross Geller<span> 6 Dec 2022</span>
                                             </h6>
                                             <span className="replay">
                                                 <Link href="#">
                                                     <a>
-                                                        Replay <i className="fas fa-reply"></i>
+                                                        Reply <i className="fas fa-reply"></i>
                                                     </a>
                                                 </Link>
                                             </span>
                                             <p>
-                                                the main component of a healthy environment for self esteem is that it
-                                                needs be nurturing. The main compont of a healthy environment.
+                                                The main component of a healthy environment for self esteem is not that
+                                                it needs be nurturing. The main compont of a healthy environment is the
+                                                willingness to forgive ourselves for our past mistakes. #namaste
                                             </p>
                                         </div>
                                     </div>
@@ -267,18 +286,19 @@ const PostDetails = () => {
                                         </div>
                                         <div className="info">
                                             <h6>
-                                                Jorden Griffin<span> 6 Aug 2022</span>
+                                                Phoebe Buffay<span> 6 Dec 2022</span>
                                             </h6>
                                             <span className="replay">
                                                 <Link href="#">
                                                     <a>
-                                                        Replay <i className="fas fa-reply"></i>
+                                                        Reply <i className="fas fa-reply"></i>
                                                     </a>
                                                 </Link>
                                             </span>
                                             <p>
-                                                the main component of a healthy environment for self esteem is that it
-                                                needs be nurturing. The main compont of a healthy environment.
+                                                The main component of a healthy environment for self esteem is not that
+                                                it needs be nurturing. The main compont of a healthy environment is the
+                                                willingness to forgive ourselves for our past mistakes. #namaste
                                             </p>
                                         </div>
                                     </div>

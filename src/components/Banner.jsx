@@ -55,8 +55,8 @@ const Banner = ({ title, subtitle, prevLink, nextLink, banner }) => {
                         letterSpacing: 2,
                     }}
                 >
-                    {/* {htmlSubtitle || subtitle} */}
-                    {subtitle}
+                    {htmlSubtitle || subtitle}
+                    {/* {subtitle} */}
                 </Typography>
             </Box>
             {prevLink || nextLink ? (

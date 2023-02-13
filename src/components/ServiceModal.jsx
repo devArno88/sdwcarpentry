@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 
 const style = {
+    maxHeight: "100vh",
     position: "absolute",
     top: "50%",
     left: "50%",
@@ -60,7 +61,7 @@ export default function BasicModal({ open, modalData, handleClose }) {
                 </Stack>
                 <Stack direction="row" justifyContent="center" spacing={2}>
                     <Button
-                        sx={{ color: "#c5a47e" }}
+                        sx={{ color: "#c5a47e", width: { xs: "40vw", sm: 200 } }}
                         variant="outlined"
                         color="error"
                         size="large"
@@ -77,7 +78,7 @@ export default function BasicModal({ open, modalData, handleClose }) {
                             variant="outlined"
                             color="warning"
                             size="large"
-                            sx={{ color: "#c5a47e", alignItems: "center" }}
+                            sx={{ color: "#c5a47e", width: { xs: "40vw", sm: 200 } }}
                         >
                             Get In Touch
                         </Button>
