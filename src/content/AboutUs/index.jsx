@@ -36,11 +36,7 @@ const AboutUs6 = () => {
                             />
                         </Grid>
                         <Grid item xs={10} sm={11} md={7}>
-                            <Typography
-                                fontSize={{ xs: 18, sm: 18, md: 21 }}
-                                textAlign={{ xs: "justify", sm: "justify", md: "start" }}
-                                sx={{ textJustify: { xs: "inter-word", sm: "inter-word" } }}
-                            >
+                            <Typography fontSize={{ xs: 18, sm: 18, md: 21 }}>
                                 {/* <p className="mb-20"> */}
                                 <span style={{ marginBottom: 20 }}>
                                     Since 2014, we have been creating beautiful and functional spaces that reflect our
