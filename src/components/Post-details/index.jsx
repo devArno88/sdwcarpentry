@@ -20,10 +20,7 @@ const PostDetails = () => {
                                 <div className="title-head">
                                     <h2>A Sustainable Practice</h2>
                                     <div className="info">
-                                        <p>
-                                            <Link href="#">Stuart, Founder & CEO</Link>/
-                                            <Link href="#">January 29th, 2022</Link>/<Link href="#">Web Design</Link>
-                                        </p>
+                                        <p>Stuart, Founder & CEO - January 29th, 2022</p>
                                         <Stack direction="row" gap={2} justifyContent="center" mt={2}>
                                             <span
                                                 style={{
@@ -200,8 +197,7 @@ const PostDetails = () => {
                                                         </Link>
                                                     </div>
                                                     <div className="tags">
-                                                        <Link href="#">Web</Link>,<Link href="#">Themeforest</Link>,
-                                                        <Link href="#">ThemesCamp</Link>
+                                                        <Link href="#">Sustainability</Link>
                                                     </div>
                                                 </div>
                                             </div>
