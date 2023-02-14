@@ -3906,7 +3906,8 @@ body {
     z-index: 2;
 }
 .testimonials.grid .item .cont {
-    padding: 40px;
+    text-align: center;
+    padding: 30px;
     border: 4px solid rgba(255, 255, 255, 0.1);
     border-top: 0;
     position: relative;
@@ -3927,14 +3928,14 @@ body {
     width: 7%;
     right: 0;
 }
-.testimonials.grid .item .cont p {
+/* .testimonials.grid .item .cont p {
     color: #fff;
     line-height: 35px;
     color: #ccc;
     /* font-family: "Monospace", serif; */
-    font-size: 22px;
-    font-weight: 400;
-}
+    /* font-size: 12px;
+    font-weight: 400; */
+} */
 .testimonials.grid .item .info {
     margin-top: 30px;
     padding-left: 30px;

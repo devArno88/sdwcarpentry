@@ -25,7 +25,7 @@ const AboutUs6 = () => {
                         justifyContent="center"
                         direction="row-reverse"
                     >
-                        <Grid item xs={8} sm={8} md={4}>
+                        <Grid item xs={8} sm={8} md={5}>
                             <img
                                 src="/img/pt/pt-6.jpg"
                                 alt="About"
@@ -35,9 +35,9 @@ const AboutUs6 = () => {
                                 }}
                             />
                         </Grid>
-                        <Grid item xs={10} sm={11} md={8}>
+                        <Grid item xs={10} sm={11} md={7}>
                             <Typography
-                                fontSize={{ xs: 18, sm: 18, md: 22 }}
+                                fontSize={{ xs: 18, sm: 18, md: 21 }}
                                 textAlign={{ xs: "justify", sm: "justify", md: "start" }}
                                 sx={{ textJustify: { xs: "inter-word", sm: "inter-word" } }}
                             >

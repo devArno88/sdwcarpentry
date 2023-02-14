@@ -11,12 +11,14 @@ const style = {
     transform: "translate(-50%, -50%)",
     width: { xs: "100%", sm: "80%", md: "60%" },
     bgcolor: "#181818",
-    border: "2px solid #000",
+    borderRadius: "1rem",
+    border: "1px solid #c5a47e",
     boxShadow: 24,
-    pt: 6,
-    pb: 6,
-    pr: 8,
-    pl: 8,
+    pt: { xs: 4, sm: 5, md: 6 },
+    pb: { xs: 4, sm: 5, md: 6 },
+    pr: { xs: 3, sm: 5, md: 8 },
+    pl: { xs: 3, sm: 5, md: 8 },
+    // gap: { xs: 2, sm: 3, md: 4 },
     gap: 4,
     overflow: "scroll",
 };
@@ -34,24 +36,49 @@ export default function BasicModal({ open, modalData, handleClose }) {
         <Modal
             open={open}
             onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
+            aria-labelledby="service-modal-title"
+            aria-describedby="service-modal-description"
             sx={{ overflow: "scroll" }}
         >
             <Stack sx={style}>
-                <Stack direction="row" sx={{ alignItems: "center", justifyContent: "center", gap: 1.5 }}>
-                    {Icon ? <Icon sx={{ height: 36, width: 36, fill: "#c5a47e" }} /> : null}
-                    <Typography id="modal-modal-title" variant="h4">
-                        {title}
+                <Stack alignItems="center" justifyContent="center">
+                    <Stack direction="row" sx={{ alignItems: "center", justifyContent: "center", gap: 1.5 }}>
+                        {Icon ? (
+                            <Icon
+                                sx={{
+                                    height: { xs: 28, sm: 32, md: 36 },
+                                    width: { xs: 28, sm: 32, md: 36 },
+                                    fill: "#c5a47e",
+                                }}
+                            />
+                        ) : null}
+                        <Typography sx={{ fontSize: { xs: 26, sm: 27, md: 28 } }} id="service-modal-title" variant="h4">
+                            {title}
+                        </Typography>
+                    </Stack>
+                    <Typography
+                        fontWeight={300}
+                        color="#9f9f9f"
+                        letterSpacing={2}
+                        sx={{ opacity: 0.8, fontSize: { xs: 20, sm: 21, md: 22 } }}
+                        mt={1}
+                        id="service-modal-description"
+                        // variant="h5"
+                    >
+                        SDW Carpentry
                     </Typography>
                 </Stack>
                 <Stack spacing={2}>
                     {services.map((svc, i) => {
                         const [first, second] = svc.split(":");
-
                         return (
                             <Stack key={i}>
-                                <Typography variant="h6" letterSpacing={1} sx={{ color: "#c5a47e" }} mb={0.5}>
+                                <Typography
+                                    variant="h6"
+                                    letterSpacing={1}
+                                    sx={{ color: "#c5a47e", fontSize: { xs: 18, sm: 19, md: 20 } }}
+                                    mb={0.5}
+                                >
                                     {first}
                                 </Typography>
                                 <Typography letterSpacing={0.5}>{second}</Typography>
@@ -61,7 +88,12 @@ export default function BasicModal({ open, modalData, handleClose }) {
                 </Stack>
                 <Stack direction="row" justifyContent="center" spacing={2}>
                     <Button
-                        sx={{ color: "#c5a47e", width: { xs: "40vw", sm: 200 } }}
+                        sx={{
+                            borderRadius: 4,
+                            color: "#c5a47e",
+                            width: { xs: "40vw", sm: 200 },
+                            fontSize: { xs: 14, sm: 15, md: 16 },
+                        }}
                         variant="outlined"
                         color="error"
                         size="large"
@@ -78,7 +110,13 @@ export default function BasicModal({ open, modalData, handleClose }) {
                             variant="outlined"
                             color="warning"
                             size="large"
-                            sx={{ color: "#c5a47e", width: { xs: "40vw", sm: 200 } }}
+                            sx={{
+                                borderRadius: 4,
+
+                                color: "#c5a47e",
+                                width: { xs: "40vw", sm: 200 },
+                                fontSize: { xs: 14, sm: 15, md: 16 },
+                            }}
                         >
                             Get In Touch
                         </Button>
