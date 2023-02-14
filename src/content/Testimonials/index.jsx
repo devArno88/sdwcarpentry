@@ -34,7 +34,7 @@ class Testimonials1 extends React.Component {
                                     {...{
                                         ref: (c) => (this.slider = c),
                                         dots: false,
-                                        arrows: true,
+                                        arrows: false,
                                         autoplay: true,
                                         rows: 1,
                                         slidesToScroll: 1,

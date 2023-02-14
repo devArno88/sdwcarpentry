@@ -3941,7 +3941,7 @@ body {
     padding-left: 30px;
     position: relative;
 }
-.testimonials.grid .item .info:after {
+/* .testimonials.grid .item .info:after {
     content: "";
     width: 0;
     height: 0;
@@ -3950,7 +3950,7 @@ body {
     position: absolute;
     left: 100px;
     top: -30px;
-}
+} */
 .testimonials.grid .item .info .author {
     width: 70px;
     height: 70px;
