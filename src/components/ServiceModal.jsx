@@ -104,7 +104,7 @@ export default function BasicModal({ open, modalData, handleClose }) {
                     <a
                         target="_blank"
                         rel="noreferrer"
-                        href={`mailto:contact@sdwcarpentry.com?subject=Enquiry: ${title}&body=${body}`}
+                        href={`mailto:sdwcarpentryltd@gmail.com?subject=Enquiry: ${title}&body=${body}`}
                     >
                         <Button
                             variant="outlined"

@@ -1,5 +1,4 @@
 import AlternateEmailTwoToneIcon from "@mui/icons-material/AlternateEmailTwoTone";
-import HomeTwoToneIcon from "@mui/icons-material/HomeTwoTone";
 import PhoneIphoneTwoToneIcon from "@mui/icons-material/PhoneIphoneTwoTone";
 import { Grid, Paper, Stack, Typography } from "@mui/material";
 import React from "react";
@@ -15,11 +14,11 @@ const items = [
         subtitle: "Click here to start",
         icon: AlternateEmailTwoToneIcon,
     },
-    {
-        title: "Location",
-        subtitle: "Smith Road, Smithville",
-        icon: HomeTwoToneIcon,
-    },
+    // {
+    //     title: "Location",
+    //     subtitle: "Smith Road, Smithville",
+    //     icon: HomeTwoToneIcon,
+    // },
 ];
 
 const ContactInfo = () => {
@@ -31,7 +30,7 @@ const ContactInfo = () => {
         <a
             target="_blank"
             rel="noreferrer"
-            href={`mailto:contact@sdwcarpentry.com?subject=General Enquiry&body=${body}`}
+            href={`mailto:sdwcarpentryltd@gmail.com?subject=General Enquiry&body=${body}`}
             style={{ width: "100%", height: "100%" }}
         >
             {children}
@@ -45,7 +44,7 @@ const ContactInfo = () => {
                         <Grid item xs={10} sm={10} md={6}>
                             <iframe
                                 width="100%"
-                                height="450"
+                                height="280"
                                 loading="lazy"
                                 allowFullScreen=""
                                 style={{ border: 0 }}
@@ -55,28 +54,26 @@ const ContactInfo = () => {
                         </Grid>
                         <Grid item xs={10} sm={10} md={4}>
                             <Grid container spacing={2} direction="column">
-                                {items.map((item) => {
-                                    const element = (
-                                        <Paper
-                                            elevation={5}
-                                            sx={{
-                                                bgcolor: "#212121",
-                                                borderRadius: "1rem",
-                                                p: { xs: 3, sm: 3, md: 2 },
-                                                justifyContent: "center",
-                                                cursor: item.title === "Email" ? "pointer" : undefined,
-                                            }}
-                                        >
+                                <Paper
+                                    elevation={5}
+                                    sx={{
+                                        p: 5,
+                                        bgcolor: "#212121",
+                                        borderRadius: "1rem",
+                                        justifyContent: "center",
+                                    }}
+                                >
+                                    <Stack spacing={3}>
+                                        <Stack spacing={1}>
                                             <Stack
-                                                direction={"row"}
                                                 display="flex"
-                                                justifyContent="center"
+                                                direction="row"
                                                 alignItems="center"
-                                                mb={{ xs: 1, sm: 1, md: 2 }}
+                                                justifyContent="center"
                                                 ml={-2}
                                                 spacing={1}
                                             >
-                                                <item.icon
+                                                <PhoneIphoneTwoToneIcon
                                                     sx={{
                                                         opacity: 0.6,
                                                         fill: "#c5a47e",
@@ -85,23 +82,52 @@ const ContactInfo = () => {
                                                     }}
                                                 />
                                                 <Typography
-                                                    fontSize={{ xs: 26, sm: 26, md: 26 }}
+                                                    fontSize={{ xs: 22, sm: 22, md: 24 }}
                                                     sx={{ color: "#E2D2BF" }}
                                                 >
-                                                    {item.title}
+                                                    {items[0].title}
                                                 </Typography>
                                             </Stack>
-                                            <Typography textAlign="center" fontSize={{ xs: 22, sm: 22, md: 22 }}>
-                                                {item.subtitle}
+                                            <Typography textAlign="center" fontSize={{ xs: 20, sm: 20, md: 22 }}>
+                                                {items[0].subtitle}
                                             </Typography>
-                                        </Paper>
-                                    );
-                                    return (
-                                        <Grid key={item.title} item xs={10} sm={12} md={12}>
-                                            {item.title === "Email" ? <EmailBlock>{element}</EmailBlock> : element}
-                                        </Grid>
-                                    );
-                                })}
+                                        </Stack>
+
+                                        <EmailBlock>
+                                            <Stack spacing={1}>
+                                                <Stack
+                                                    display="flex"
+                                                    direction="row"
+                                                    alignItems="center"
+                                                    justifyContent="center"
+                                                    ml={-2}
+                                                    spacing={1}
+                                                >
+                                                    <AlternateEmailTwoToneIcon
+                                                        sx={{
+                                                            opacity: 0.6,
+                                                            fill: "#c5a47e",
+                                                            width: { xs: 32, sm: 28, md: 36 },
+                                                            height: { xs: 32, sm: 28, md: 36 },
+                                                        }}
+                                                    />
+                                                    <Typography
+                                                        fontSize={{ xs: 22, sm: 22, md: 24 }}
+                                                        sx={{ color: "#E2D2BF" }}
+                                                    >
+                                                        {items[1].title}
+                                                    </Typography>
+                                                </Stack>
+                                                <Typography textAlign="center" fontSize={{ xs: 20, sm: 20, md: 22 }}>
+                                                    sdwcarpentryltd@gmail.com
+                                                </Typography>
+                                                <Typography textAlign="center" level="caption">
+                                                    Click here to email us!
+                                                </Typography>
+                                            </Stack>
+                                        </EmailBlock>
+                                    </Stack>
+                                </Paper>
                             </Grid>
                         </Grid>
                     </Grid>
